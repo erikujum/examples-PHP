@@ -31,7 +31,7 @@ class AuthController extends Controller
         //comprobamos que el email y el password han sido introducidos
         $request->validate([
             'email' => 'required',
-            'password' => 'required',
+            'password' => 'required'
         ]);
         //Almacenamos las credenciales de email y del password
         $credentials = $request->only('email', 'password');
@@ -53,6 +53,6 @@ class AuthController extends Controller
         if (Auth::check()) {
             return view('logados');
         }
-        return redirect("/")->withSuccess();
+        return redirect("/")->withSuccess("No tienes acceso, por favor inicia sesion");
     }
 }
