@@ -31,7 +31,7 @@ class AuthController extends Controller
         //comprobamos que el email y el password han sido introducidos
         $request->validate([
             'email' => 'required',
-            'password' => 'required'
+            'password' => 'required',
         ]);
         //Almacenamos las credenciales de email y del password
         $credentials = $request->only('email', 'password');
