@@ -10,6 +10,10 @@
         i{
             font-size: 50px;
         }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +24,8 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
-                    <h1>USUARIO LOGADO</h1>
+                    <h1>USUARIO LOGADO</h1></br>
+                    <h2>Ya tienes acceso👽</h2>
                 </div>
             </div>
         </div>

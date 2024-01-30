@@ -22,28 +22,28 @@
         <div class="row vh-100 justify-content-center aling-items-center">
             <main class="form-singnin" style="width: 100%; max-width: 330px; padding: 15px; margin: auto;">
                 <form method="POST" action="{{ route('login') }}">
-                    <h1 class="h3 mb-3 fw-normal"> Por favor, sing in</h1>
+                    <h1 class="h3 mb-3 fw-normal"> Por favor, Inicia session</h1>
                     @csrf
                     <div class="form-floating">
                         <input type="text" placeholder="Email" id="email" class="form-control" name="email" required autofocus>
                         @if ($errors->has('email'))
                             <span class="text-danger">{{ $errors->first('email')}}</span>
                         @endif
-                        <label for="floatingInput"> Email address</label>
+                        <label for="floatingInput"> Correo electronica</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" placeholder="Password" id="password" class="form-control" name="password" required autofocus>
                         @if ($errors->has('password'))
                             <span class="text-danger">{{ $errors->first('password')}}</span>
                         @endif
-                        <label for="floatingPassword"> password address</label>
+                        <label for="floatingPassword"> Contraseña</label>
                     </div>
                     <div class="checkbox mb-3">
                         <label>
                             <input type="checkbox" name="remember"> Recuerdame
                         </label>
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sing in</button>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar session</button>
                     <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
                 </form>
             </main>
